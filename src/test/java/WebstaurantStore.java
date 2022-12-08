@@ -75,7 +75,6 @@ class ChromeTest {
                 pageLink.click();
             }
 
-//            List<WebElement> itemsDescription = driver.findElements(By.xpath("//div[@id='product_listing']//following::a[@data-testid='itemDescription']"));
             int numberOfItems = PageObjects.item_descriptions(driver).size();
             for(int h = 0 ; h <= numberOfItems ; h++){
                 if(!PageObjects.item_descriptions(driver).get(i).getText().contains("Table")){
